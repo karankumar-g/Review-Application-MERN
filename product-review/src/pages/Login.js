@@ -1,7 +1,43 @@
-import React from "react";
+export default function Login() {
+  return (
+    <>
+      <div class="container-fluid pt-5">
+        <div class="row px-xl-5">
+          <div class="col-lg-5 mb-5">
+            <div class="contact-form">
+              <h1>Login</h1>
 
-const Login = () => {
-  return <div></div>;
-};
+              <div class="control-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Your Email"
+                  required="required"
+                />
+                <p class="help-block text-danger"></p>
+              </div>
+              <div class="control-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Your Password"
+                  required="required"
+                />
+                <p class="help-block text-danger"></p>
+              </div>
 
-export default Login;
+              <div>
+                <button class="btn btn-primary py-2 px-4" type="submit">
+                  Login
+                </button>
+              </div>
+              <p>
+                Don't have account? <a href="/register">Register here</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}

@@ -108,25 +108,25 @@ function Home() {
                 id="navbarCollapse"
               >
                 <div class="navbar-nav mr-auto py-0">
-                  <a href="index.html" class="nav-item nav-link active">
+                  <a href="/home" class="nav-item nav-link active">
                     Home
                   </a>
-                  <a href="shop.html" class="nav-item nav-link">
+                  <a href="#" class="nav-item nav-link">
                     Shop
                   </a>
-                  <a href="detail.html" class="nav-item nav-link">
+                  <a href="/home" class="nav-item nav-link">
                     Shop Detail
                   </a>
 
-                  <a href="contact.html" class="nav-item nav-link">
+                  <a href="/review" class="nav-item nav-link">
                     Contact
                   </a>
                 </div>
                 <div class="navbar-nav ml-auto py-0">
-                  <a href="" class="nav-item nav-link">
+                  <a href="/login" class="nav-item nav-link">
                     Login
                   </a>
-                  <a href="" class="nav-item nav-link">
+                  <a href="/register" class="nav-item nav-link">
                     Register
                   </a>
                 </div>
@@ -161,7 +161,10 @@ function Home() {
               style={{ padding: "30px" }}
             >
               <p class="text-right">15 Products</p>
-              <a href="" class="cat-img position-relative overflow-hidden mb-3">
+              <a
+                href="/details"
+                class="cat-img position-relative overflow-hidden mb-3"
+              >
                 <img class="img-fluid" src="img/cat-1.jpg" alt="" />
               </a>
               <h5 class="font-weight-semi-bold m-0">Men's dresses</h5>
@@ -173,7 +176,10 @@ function Home() {
               style={{ padding: "30px" }}
             >
               <p class="text-right">15 Products</p>
-              <a href="" class="cat-img position-relative overflow-hidden mb-3">
+              <a
+                href="/details"
+                class="cat-img position-relative overflow-hidden mb-3"
+              >
                 <img class="img-fluid" src="img/cat-2.jpg" alt="" />
               </a>
               <h5 class="font-weight-semi-bold m-0">Women's dresses</h5>
@@ -185,7 +191,10 @@ function Home() {
               style={{ padding: "30px" }}
             >
               <p class="text-right">15 Products</p>
-              <a href="" class="cat-img position-relative overflow-hidden mb-3">
+              <a
+                href="/details"
+                class="cat-img position-relative overflow-hidden mb-3"
+              >
                 <img class="img-fluid" src="img/cat-3.jpg" alt="" />
               </a>
               <h5 class="font-weight-semi-bold m-0">Baby's dresses</h5>
@@ -197,7 +206,10 @@ function Home() {
               style={{ padding: "30px" }}
             >
               <p class="text-right">15 Products</p>
-              <a href="" class="cat-img position-relative overflow-hidden mb-3">
+              <a
+                href="/details"
+                class="cat-img position-relative overflow-hidden mb-3"
+              >
                 <img class="img-fluid" src="img/cat-4.jpg" alt="" />
               </a>
               <h5 class="font-weight-semi-bold m-0">Accerssories</h5>
@@ -209,7 +221,10 @@ function Home() {
               style={{ padding: "30px" }}
             >
               <p class="text-right">15 Products</p>
-              <a href="" class="cat-img position-relative overflow-hidden mb-3">
+              <a
+                href="/details"
+                class="cat-img position-relative overflow-hidden mb-3"
+              >
                 <img class="img-fluid" src="img/cat-5.jpg" alt="" />
               </a>
               <h5 class="font-weight-semi-bold m-0">Bags</h5>
@@ -221,7 +236,10 @@ function Home() {
               style={{ padding: "30px" }}
             >
               <p class="text-right">15 Products</p>
-              <a href="" class="cat-img position-relative overflow-hidden mb-3">
+              <a
+                href="/details"
+                class="cat-img position-relative overflow-hidden mb-3"
+              >
                 <img class="img-fluid" src="img/cat-6.jpg" alt="" />
               </a>
               <h5 class="font-weight-semi-bold m-0">Shoes</h5>
