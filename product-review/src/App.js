@@ -13,7 +13,7 @@ const routerPaths = createBrowserRouter([
   { path: "/Adminlogin", element: <Adminlogin /> },
   { path: "/register", element: <Register /> },
   { path: "/login", element: <Login /> },
-  { path: "/addreview", element: <AddReview /> },
+  { path: "/review", element: <AddReview /> },
 ]);
 
 function App() {

@@ -3,6 +3,7 @@ import Menu from "./Menu.js";
 export default function AddReview() {
   return (
     <>
+      <Menu />
       <div class="container-fluid">
         <div class="row align-items-center py-3 px-xl-5">
           <div class="col-lg-3 d-none d-lg-block">
