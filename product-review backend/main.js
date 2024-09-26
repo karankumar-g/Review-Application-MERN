@@ -16,6 +16,9 @@ app.use("/user", user);
 var product = require("./api/product");
 app.use("/product", product);
 
+var admin = require("./api/admin");
+app.use("/admin", admin);
+
 app.listen(PORTNO, () => {
   console.log(`Server is running on http://localhost:${PORTNO}/`);
 });

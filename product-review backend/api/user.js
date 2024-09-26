@@ -8,18 +8,17 @@ const client = new MongoClient(url);
 
 const dbName = "product-review";
 
-router.post("/login", async (req, res) => {
-  await client.connect();
-  let db = client.db(dbName);
-  let { name, password } = req.body;
-  res.json({ msg: "Login Success" });
+// http://localhost:8080/user/login
+router.post("/login", (req, res) => {
+  try {
+    let { email, password } = req.body;
+    res.json({ msg: "login test" });
+  } catch (e) {
+    res.status(400).json({ msg: e });
+  }
 });
-
-router.post("/register", async (req, res) => {
-  await client.connect();
-  let db = client.db(dbName);
-  let { name, password, email, mobile } = req.body;
-  res.json({ msg: "Login test " });
+// http://localhost:8080/user/register
+router.post("/register", (req, res) => {
+  let { email, password, name, mobile } = req.body;
 });
-
 module.exports = router;

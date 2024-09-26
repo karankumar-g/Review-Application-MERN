@@ -4,7 +4,9 @@ function Home() {
   const [list, setList] = useState([]);
 
   const getData = async () => {
-    let res = await fetch("http://localhost:8080/product/getAllProducts");
+    let res = await fetch(
+      "http://localhost:8080/product/getAllApprovedProducts"
+    );
     let json = await res.json();
     setList(json);
   };
@@ -61,7 +63,7 @@ function Home() {
                     <a href="" class="dropdown-item">
                       Women's Dresses
                     </a>
-                    <a href="" class="dropdown-item">
+                    <a href="" class="dropdown-item" data-testid="test2">
                       Baby's Dresses
                     </a>
                   </div>
