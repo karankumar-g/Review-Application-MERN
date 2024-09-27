@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var client = new WebSocket("ws://localhost:8080/");
+
+      client.onerror = function () {
+        console.log("connection Error");
+      };
+      client.onopen = function () {
+        console.log("connection successfully");
+      };
+      client.onclose = function () {
+        console.log("echo-protocol client closed");
+      };
+      client.onmessage = function (e) {
+        if (typeof e.data === "string") {
+          console.log("Received:" + e.data + "");
+        }
+      };
+    </script>
+  </body>
+</html>
